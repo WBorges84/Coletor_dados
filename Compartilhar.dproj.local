@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/09/22 13:20:50.000.869,=C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/09/22 13:21:11.000.954,C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\99Coders\Posts\269 - Compartilhando imagens com o Action ShareSheet -----\FontesFull\Unit1.pas</Transaction>
+    <Transaction>2021/09/22 13:21:11.000.954,C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\99Coders\Posts\269 - Compartilhando imagens com o Action ShareSheet -----\FontesFull\Unit1.fmx</Transaction>
+    <Transaction>2021/09/22 13:21:25.000.738,C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\99Coders\Posts\269 - Compartilhando imagens com o Action ShareSheet -----\FontesFull\Compartilhar.dproj</Transaction>
+    <Transaction>2021/09/22 13:34:13.000.761,=D:\99Coders\Posts\269 - Compartilhando imagens com o Action ShareSheet -----\FontesFull\FMX.BitmapHelper.pas</Transaction>
+    <Transaction>2021/09/24 10:09:44.000.155,D:\99Coders\Posts\269 - Compartilhando imagens e textos com o Action ShareSheet -----\FontesFull\FMX.BitmapHelper.pas=</Transaction>
+    <Transaction>2021/09/24 10:26:24.000.250,=D:\99Coders\Posts\269 - Compartilhando imagens e textos com o Action ShareSheet -----\FontesFull\FMX.BitmapHelper.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMacMini iOSSimulator="iPhone5"/>
+		<NoProfile Android="RQ8NA09NWJL" Android64="RQ8NA09NWJL"/>
+	</ActiveMobileDevice>
+</BorlandProject>

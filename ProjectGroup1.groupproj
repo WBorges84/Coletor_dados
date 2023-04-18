@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BF159335-BF0E-4C95-9D63-AE3ED0F18D25}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Coletor.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\269-FontesShareSheet\Fontes\Compartilhar.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Coletor">
+        <MSBuild Projects="Coletor.dproj"/>
+    </Target>
+    <Target Name="Coletor:Clean">
+        <MSBuild Projects="Coletor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Coletor:Make">
+        <MSBuild Projects="Coletor.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Compartilhar">
+        <MSBuild Projects="..\269-FontesShareSheet\Fontes\Compartilhar.dproj"/>
+    </Target>
+    <Target Name="Compartilhar:Clean">
+        <MSBuild Projects="..\269-FontesShareSheet\Fontes\Compartilhar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Compartilhar:Make">
+        <MSBuild Projects="..\269-FontesShareSheet\Fontes\Compartilhar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Coletor;Compartilhar"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Coletor:Clean;Compartilhar:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Coletor:Make;Compartilhar:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

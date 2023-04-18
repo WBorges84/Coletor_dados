@@ -1,0 +1,80 @@
+object frmEx: TfrmEx
+  Left = 0
+  Top = 0
+  Caption = 'Compartilhar Imagem'
+  ClientHeight = 516
+  ClientWidth = 281
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Center
+    Margins.Bottom = 50.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 150.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object rectShareImage: TRectangle
+    Align = Scale
+    Fill.Color = xFF1F99EF
+    Position.X = 16.529411315917970000
+    Position.Y = 441.285278320312500000
+    Size.Width = 116.575859069824200000
+    Size.Height = 61.873016357421880000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 6.000000000000000000
+    YRadius = 6.000000000000000000
+    OnClick = rectShareImageClick
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, Style]
+      Locked = True
+      Size.Width = 116.575859069824200000
+      Size.Height = 61.873016357421880000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Compartilhar Imagem'
+      TabOrder = 0
+    end
+  end
+  object rectShareTexto: TRectangle
+    Align = Scale
+    Fill.Color = xFF1F99EF
+    Position.X = 148.764724731445300000
+    Position.Y = 441.285278320312500000
+    Size.Width = 116.575851440429700000
+    Size.Height = 61.873016357421880000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 6.000000000000000000
+    YRadius = 6.000000000000000000
+    OnClick = rectShareTextoClick
+    object Label2: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, Style]
+      Locked = True
+      Size.Width = 116.575851440429700000
+      Size.Height = 61.873016357421880000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Compartilhar Texto'
+      TabOrder = 0
+    end
+  end
+  object ActionList1: TActionList
+    Left = 48
+    Top = 24
+    object ActShare: TShowShareSheetAction
+      Category = 'Media Library'
+    end
+  end
+end
